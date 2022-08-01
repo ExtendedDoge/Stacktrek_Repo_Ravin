@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(60, 102, 240);
+    color: #333;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Arial;
+    text-align: left;
+    color: #000;
+}
+
+#wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 31%;
+    transform: translateX(-25%);
+}
+
+.copyright {
+    font-size: .8em;
+    font-style: italic;
+}
