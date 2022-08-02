@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="christmas.css">
+    <title>Christmas Countdown</title>
+</head>
+
+<body>
+    <img src="Christmastree.png">
+    <div id="pasko"></div>
+    <script>
+        let today = new Date();
+        let christmasYear = today.getFullYear();
+
+        if (today.getMonth() == 11 &&
+            today.getDate() > 25) {
+            christmasYear = christmasYear + 1;
+        }
+
+        let christmasDate =
+            new Date(christmasYear, 11, 25);
+        let dayMilliseconds =
+            1000 * 60 * 60 * 24;
+        let remainingDays = Math.ceil(
+            (christmasDate.getTime() - today.getTime()) /
+            (dayMilliseconds)
+        );
+
+        document.write("Christmas" + "<br>" + "In " + remainingDays +
+            " days");
+    </script>
+</body>
+
+</html>
