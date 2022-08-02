@@ -1,0 +1,40 @@
+body {
+    background: #E2AC7F;
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#wrap ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#wrap ul {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#wrap p,
+#wrap h1 {
+    padding: 0px 15px;
+}
+
+#wrap ul li::first-letter {
+    font-size: 140%;
+}
+
+#wrap h1 {
+    border-bottom: 3px dotted black;
+    margin: 0 auto;
+}
+
+#wrap {
+    width: 80%;
+    margin: 15px auto;
+    border: 3px dotted black;
+    background: #F5F5DC;
+}
