@@ -1,0 +1,12 @@
+#cars {
+    border-radius: 0%;
+    width: 230px;
+    height: 80px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
