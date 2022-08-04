@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSCorolla.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cars"></div>
+    <img src="CarCorolla.png">
+    <script>
+        let car = {
+            Manufacturer: "Toyota \n",
+            MakeAndModel: "Corolla AE1011 \n",
+            Engine: "1,3 2E \n",
+            BodyStyle: "Sedan \n"
+        }
+
+        var propertyName = ['Manufacturer', 'Make And Model', 'Engine', 'BodyStyle'];
+
+        document.getElementById("car").innerHTML = car.Manufacturer + car.MakeAndModel + car.Engine + car.BodyStyle;
+    </script>
+
+
+</body>
+
+</html>
