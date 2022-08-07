@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 4;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    width: 400px;
+    height: 210px;
+    font-size: 18px;
+    line-height: 200px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
