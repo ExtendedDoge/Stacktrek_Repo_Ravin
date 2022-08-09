@@ -1,20 +1,25 @@
-function newElement() {
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(inputValue);
-    li.appendChild(t);
-    if (inputValue === '') {
-        alert("You must write something!");
-    } else {
-        document.getElementById("myUL").appendChild(li);
-        const setBg = () => {
-            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-            document.body.style.backgroundColor = "#" + randomColor;
-            color.innerHTML = "#" + randomColor;
-        }
+window.onload = function onload() {
 
-        genNew.addEventListener("click", setBg);
-        setBg();
+    let notes = document.querySelector("#note-display");
+    let submitBtn = document.querySelector("#btn");
+
+    const displayNote = () => {
+        let addNote = document.querySelector("#note").value;
+        return addNote;
     }
-    document.getElementById("myInput").value = "";
+
+    submitBtn.onclick = () => {
+        var x = Math.round(0xffffff * Math.random()).toString(16);
+        var y = (6 - x.length);
+        var z = "000000";
+        var z1 = z.substring(0, y);
+        var color = "#" + z1 + x;
+        notes.innerHTML += `
+        <div class="my-note" style="background-color: ${color};">
+            <article>
+                <p class="notes-info">${displayNote()}</p>
+            </article>
+        </div>
+        `;
+    }
 }

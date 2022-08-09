@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EVENThandling.css">
-    <script src="EVENThandling.js"></script>
-    <title>Sticky Note Quiz</title>
+    <title>Sticky Notes</title>
 </head>
 
 <body>
-    <div id="myDIV" class="header">
-        <input type="text" id="myInput" placeholder="insert text here">
-        <button class="addbtn" type="button" onclick="newElement()">add</button>
+    <div id="root">
+        <input type="text" name="note" id="note" placeholder="insert text here" />
+        <button id="btn">add</button>
+        <br/>
+        <br/>
+        <br/>
+        <div id="note-display"></div>
     </div>
-    <ul id="myUL"></ul>
+    <script src="EVENThandling.js"></script>
 </body>
 
 </html>
