@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h2 {
+    font-weight: bold;
+    color: #800080;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(184, 18, 156, 0.664);
+    margin: 8px;
+    width: 350px;
+    height: 150px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #800080;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #800080;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(214, 190, 205);
+}
+
+#hobbylist {
+    list-style-type: none;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+#foodlist {
+    list-style-type: none;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+#serieslist {
+    list-style-type: none;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+#movieslist {
+    list-style-type: none;
+    text-indent: 30px;
+    font-weight: bold;
+}
