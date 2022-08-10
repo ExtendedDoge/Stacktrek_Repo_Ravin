@@ -21,8 +21,6 @@ h2 {
 .column {
     float: left;
     width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
 }
 
 .card {
@@ -33,7 +31,7 @@ h2 {
 }
 
 .about-section {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     background-color: #800080;
     font-weight: bold;
@@ -41,7 +39,7 @@ h2 {
 }
 
 .container {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .container::after,
@@ -96,4 +94,57 @@ h2 {
     margin: 0;
     text-indent: 70px;
     font-weight: bold;
+}
+
+form {
+    width: px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #800080;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px;
+    background: #800080;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #800080;
+    border-bottom: 1px solid #800080;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
