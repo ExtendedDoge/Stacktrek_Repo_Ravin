@@ -4,7 +4,7 @@
 
 
 const euros = [29.76, 41.85, 46.5];
-const avg = euros.reduce(getAverage, euros);
+const avg = euros.reduce(getAverage, avg);
 
 const getAverage = (total, average) => {
     return total + Math.round(average);
