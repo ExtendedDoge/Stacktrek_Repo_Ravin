@@ -6,7 +6,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 /**start homepage setion**/
 
 header {
@@ -60,7 +59,7 @@ header .navigation .navigation-items a:hover:before {
 }
 
 section {
-    padding: 100px 200px;
+    padding: 100px 70px;
 }
 
 .home {
@@ -95,6 +94,8 @@ section {
 
 .home .content.active {
     display: block;
+    position: relative;
+    left: 100px;
 }
 
 .home .content h1 {
@@ -228,12 +229,12 @@ section {
     transition-property: clip-path;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
     header {
-        padding: 12px 20px;
+        padding: 12px 10px;
     }
     section {
-        padding: 100px 20px;
+        padding: 100px 10px;
     }
     .home .media-icons {
         right: 15px;
@@ -315,6 +316,7 @@ section {
 .blog-list {
     display: grid;
     gap: 40px;
+    list-style: none;
 }
 
 .blog-card .card-banner {
@@ -324,12 +326,12 @@ section {
 }
 
 .blog-card.large .card-banner {
-    margin-block-end: 40px;
+    margin-block-end: 38px;
 }
 
 .blog-card.large .card-title {
-    font-size: 3.5rem;
-    line-height: 1.2;
+    font-size: 3.2rem;
+    line-height: 0.9;
     margin-block-end: 20px;
 }
 
@@ -461,8 +463,9 @@ ion-icon {
 }
 
 .blog-card .card-title {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
+
 
 
 /**end of blog section**/
