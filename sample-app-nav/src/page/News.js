@@ -39,26 +39,23 @@ function News() {
         // in our case it is empty meaning nothing will change therefore it will execute once only
     )
 
-    return ( <
-        div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        div >
-        <
-        h1 > News < /h1> <
-        p > This is the news page < /p> <
-        ul > {
+    return ( 
+        <div className = "App" >
+        <header className = "App-header" >
+        <div>
+        <h1> News </h1> 
+        <p> This is the news page </p>
+        <ul> {
             newsList.map((item) => {
                 // what is the key for? it is used to make the UI list efficient
                 // read more here https://reactjs.org/docs/lists-and-keys.html
-                return <li key = { item } > { item } < /li>
+                return <li key = { item } > { item } </li>
             })
-        } <
-        /ul> <
-        /div> <
-        /header> <
-        /div>
+        } 
+        </ul> 
+        </div> 
+        </header> 
+        </div>
 
     )
 }
