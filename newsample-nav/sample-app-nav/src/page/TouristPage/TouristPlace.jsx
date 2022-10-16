@@ -42,16 +42,20 @@ function TouristAttractions() {
         <h1>Tourist Places to Wander</h1> 
         <p>Top 100 Places to Go on a Vacation!</p> 
         <ul>
-            {areaList.map((item,index) => {
-               return(
-                <li key ={index}>
-                <div>
-                  <img src={item.imageUrl} alt={item.title}></img>
-                  <div>{item.title}</div>
-                </div>
-              </li>
-               )
-                })} 
+        <div className="card-group">
+                        {areaList.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <div className="container mb-3">
+                                        <div className="card bg-secondary border-info" style={{width: '18rem'}}>
+                                            <img className="card-img-top" style={{width: "100%"}} src={item.imageUrl} alt={item.title} />
+                                            <h5 className="card-title">{item.title}</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </div>
         </ul> 
         </div> 
         </header>
